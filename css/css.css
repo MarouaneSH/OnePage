@@ -1,0 +1,136 @@
+*
+{
+    font-family: 'Montserrat', sans-serif;
+
+}
+.navbar
+{
+    height: 80px !important;
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.53);
+}
+.navbar-inverse .navbar-nav>li>a
+{
+    color: black;
+}
+
+.navbar-left{
+        margin-top: 15px;
+}
+.navbar-brand img
+{
+        width: 300px;
+    height: 50px;
+}
+.navbar-header
+{
+        width: 30%;
+}
+.navbar-left
+{
+    width: 70%;
+}
+.navbar-left li
+{
+    margin-right: 30px;
+}
+.carousel-caption
+{
+    top: 25%;
+}
+.carousel-inner
+{
+    height: 100vh;
+}
+.carousel-caption h1
+{
+    font-size: 80px;
+}
+.background-opacity
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+        background: rgba(0, 0, 0, 0.56);
+        top: 0;
+}
+.carousel-caption p
+{
+        margin-top: 60px;
+        font-size: 18px;
+}
+.carousel-caption p span
+{
+    color: #BB5854;
+    font-weight: bold;
+}
+.carousel-inner img
+{
+    height: 100% !important;
+}
+/* media screen */
+@media screen and (max-width: 1089px){
+ .navbar-left li
+{
+    margin-right: 0px;
+}
+.navbar-left 
+{
+    text-align: right;
+}
+.navbar-nav>li 
+{
+    float: initial;
+}
+.nav>li
+{
+    display: inline-block;
+}
+.carousel-caption h1
+{
+    font-size: 50px;
+}
+
+}
+
+@media screen and (max-width: 769px)
+{
+    .navbar-header
+    {
+        width: 100%;
+    }
+    .navbar-toggle
+    {
+        margin-top: 20px;
+    }
+    .carousel-inner
+    {
+      height: auto;  
+    }
+    .carousel-caption
+    {
+        top: 15%;
+    }
+    .carousel-caption h1
+    {
+        font-size: 20px;
+    }
+    .navbar-brand
+    {
+        width: 70%;
+    }
+    .navbar-brand img
+    {
+        width: 100%;
+    }
+    .carousel-caption p
+    {
+        font-size: 10px;
+        margin: 0;
+    }
+    .carousel-inner
+    {
+        height: auto;
+    }
+}
