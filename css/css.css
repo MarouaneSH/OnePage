@@ -94,10 +94,13 @@
 {
     color: black;
 }
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:not(.active-nav):hover
 {
     color: black;
        border-bottom: solid #B75654;
+}
+.active-nav{
+    border-bottom: solid #B75654;
 }
 .navbar-header
 {
@@ -168,17 +171,18 @@
     top: 0;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 .chiffre-header h3
 {
     border-top: solid 1px #B75654;
-    
+        
     width: 250px;
     padding: 0;
     margin: 0;
     margin: 0 auto;
     margin-top: 15px;
+    padding-top: 10px;
 }
 .circle h1
 {
@@ -190,6 +194,7 @@
     margin: auto;
     color: white;
     font-size: 50px;
+    font-weight: bold;
 }
 .chiffre-desc 
 {
@@ -199,7 +204,7 @@
     background: #595959;
     color: white;
     margin-top: 10px;
-    padding: 3px;
+    padding: 8px;
 }
 
 .temoignage
@@ -289,6 +294,7 @@ hr
     position: absolute;
     background: rgba(255, 252, 252, 0.98);
     opacity: 0;
+    cursor: pointer;
    
 }
 .img-service
@@ -327,13 +333,67 @@ hr
 .espace
 {
     text-align: center;
+    display: none;
 }
 .offre-example  .espace .col-md-3
 {
     text-align: center;
 }
+.espace img
+{
+    width: 80px;
+}
+.espace h4
+{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.espace p
+{
+    font-size: 15px;
+}
+.espace h2
+{
+    font-size: 24px;
+
+}
+.espace h2 span
+{
+    font-size: 18px
+}
 
 
+
+/*Courirer*/
+.courrier 
+{
+    display: none;
+}
+.courrier .col-md-4
+{
+    text-align: center;
+}
+
+.courrier img
+{
+    width: 100px;
+}
+.courrier h4
+{
+        font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.courrier p
+{
+        font-size: 16px;
+}
+/*Reunion */
+.reunion
+{
+    display: none;
+}
 /*Create five layout*/
 .col-xs-15,
 .col-sm-15,

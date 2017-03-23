@@ -20,7 +20,7 @@ $(window).on('resize', function (){
 });
 
 $('.carousel').carousel({
-  interval: 686000,
+  interval: 4000,
   pause: "true"
 });
 
@@ -28,32 +28,64 @@ $('.carousel').carousel({
 
   $(document).ready(function(){
         
+          ScrollToDiv();
+
+
          $(".disable-img").eq(0).click(function(){
              ShowServices();
              $(this).css("opacity","0");
              $(".development").slideDown("slow");
+               $(".espace").hide();
+               $(".courrier ").hide();
+               $(".reunion").hide();
          })
 
          $(".disable-img").eq(1).click(function(){
              ShowServices();
              $(this).css("opacity","0");
              $(".development").hide();
+             $(".espace").slideDown();
+             $(".courrier ").hide();
+             $(".reunion").hide();
          })
 
          $(".disable-img").eq(2).click(function(){
              ShowServices();
              $(this).css("opacity","0");
              $(".development").hide();
+              $(".espace").hide();
+               $(".courrier ").slideDown();
+               $(".reunion").hide();
          })
 
          $(".disable-img").eq(3).click(function(){
              ShowServices();
              $(this).css("opacity","0");
              $(".development").hide();
+              $(".espace").hide();
+             $(".courrier ").hide();
+             $(".reunion").slideDown();
          })
+         $("#sd").click(function(){
+            $('#sd').animateNumber({ number: 165 }, 8000);
+         })
+         
           
      })
 
+
+     function animateNumber()
+     {
+          $(".count").prop('Counter',0).animate({
+           Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+    });
+     }
 
      var display = false;
      function ShowServices(){
@@ -78,4 +110,16 @@ $('.carousel').carousel({
              {
                 $(".img-service").parent().children(".disable-img").css("opacity","0.7");
              }    
+     }
+
+
+     function ScrollToDiv()
+     {
+         $(".navbar-nav li a").eq(0).click(function(e){
+           
+             $('html,body').animate({
+                    scrollTop: $(".aboutus").offset().top},
+                    'slow');
+
+         })
      }
