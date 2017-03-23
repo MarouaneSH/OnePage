@@ -19,6 +19,7 @@
     font-size: 20px;
     z-index: 21
 }
+
 .carousel-caption p span
 {
     color: #B75654;
@@ -36,6 +37,15 @@
     /* line-height: 40px; */
    
     left: -180px;
+}
+.chiffre-cle
+{
+    background: url('../img/slider2.png') no-repeat center center fixed ;
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 #head2
 {
@@ -65,6 +75,7 @@
     position: fixed;
     z-index: 20;
     width: 100%;
+        z-index: 10000;
 }
 .navbar-header
 {
@@ -94,7 +105,8 @@
 {
     color: black;
 }
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:not(.active-nav):hover
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover
 {
     color: black;
        border-bottom: solid #B75654;
@@ -149,8 +161,8 @@
     height: 100%;
     position: absolute;
     top: 0;
-
-   background: rgba(255, 255, 255, 0.43);
+    
+   background: rgba(139, 157, 158, 0.22);
 }
 .circle
 {
@@ -239,18 +251,26 @@
 /*ABOUT US*/
 .aboutus
 {
-    background: #162127;
-        height: 660px;
+    /*background: url('../img/background.png') no-repeat ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: top;*/
+  background: #C7CACB;
+ height: 560px;
 }
 .aboutus-desc
 {
-    margin-top: 10%;
+    margin-top: 20px;
     color: white;
+    font-family: Raleway;
 }
 .aboutus-desc p
 {
     line-height: 28px;
-    font-size: 16px
+    font-size: 19px;
+    font-family: Raleway;
 }
 .aboutus-desc h4
 {
@@ -267,7 +287,7 @@
 {
     background: #C7CACB;
         margin-top: -20px;
-        height: 900px
+        height: 600px
 }
 .offre-tarifs h3
 {
@@ -284,7 +304,7 @@ hr
 }
 .tarifs-title
 {
-    margin-top: 10%;
+   
     margin-bottom: 60px;
 }
 .disable-img
@@ -394,6 +414,112 @@ hr
 {
     display: none;
 }
+
+/*Par ners*/
+.partners{
+    text-align: center;
+    background: #d39491;
+        padding-top: 50px;
+    padding-bottom: 150px;
+}
+.partners h2
+{
+        margin-bottom: 30px;
+}
+.partners img
+{
+    width: 110px;
+    margin: 0 auto;
+}
+.partners .col-md-2
+{
+    padding: 20px;
+    text-align: center;
+}
+.partners .col-md-4
+{
+     padding: 20px;
+     text-align: center;
+    
+}
+.events {
+    text-align: center;
+    padding-bottom: 80px;
+   
+}
+.events h3
+{
+    margin-bottom: 60px;
+    margin-top: 80px
+}
+.events h4
+{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.events .col-md-6
+{
+    text-align: left;
+    
+}
+.events .row img
+{
+       width: 40px;
+    margin-right: 20px;
+}
+.events .row 
+{
+    margin-top: 8px;
+}
+.events p
+{
+    margin-top: 10px;
+}
+.single-event{
+     background: #D9D9D9;
+     padding:20px;
+     border: solid rgba(0, 0, 0, 0.41) 1px; 
+      min-height: 200px
+}
+.img-event
+{
+    position: absolute;
+    top: -49px;
+    right: 0;
+    left: 0;
+    margin: 0;
+    margin: auto;
+    width: 60px;
+
+}
+.contact
+{
+    padding: 80px;
+    background: url('../img/slider1.png');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social img
+{
+        width: 35px;
+    margin-right: 5px;
+
+}
+/*.map div:nth-child(1)
+{
+    width: 100% !important;
+height: 300px !important;
+}*/
+
+
+
+
+
+
+
+
 /*Create five layout*/
 .col-xs-15,
 .col-sm-15,
@@ -447,7 +573,51 @@ hr
     }
     .navbar-brand img
     {
-            height: 80px !important;
-    width: 280px !important;
+            height: 50px !important;
+         width: 180px !important;
     }
+    .head
+    {
+        position: initial;
+        margin-top: 20px ;
+        font-size: 18px !important;
+    }
+    .navbar
+    {
+        height: 60px;
+    }
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form
+        {
+            background: #e7e7e7;
+        }
+        .navbar-inverse .navbar-toggle
+        {
+            background: #bb5955;
+        }
+        .chiffre-cle
+        {
+            height: 1650px;
+        }
+        .chiffre-cle .container
+        {
+            top: 120px;
+        }
+        .circle
+        {
+                border: solid #585858 1px;
+        }
+        .circle h1
+        {
+            color: #585858;
+        }
+        .chiffre-desc   
+        {
+            margin-bottom: 30px;
+        }
+        .temoignage
+        {
+            position: initial;
+            margin-right: 0 !important;
+        }
+
 }

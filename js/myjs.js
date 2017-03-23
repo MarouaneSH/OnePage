@@ -20,12 +20,12 @@ $(window).on('resize', function (){
 });
 
 $('.carousel').carousel({
-  interval: 4000,
+  interval: 488000,
   pause: "true"
 });
 
 
-
+  var scrolled =false;
   $(document).ready(function(){
         
           ScrollToDiv();
@@ -66,26 +66,21 @@ $('.carousel').carousel({
              $(".courrier ").hide();
              $(".reunion").slideDown();
          })
-         $("#sd").click(function(){
-            $('#sd').animateNumber({ number: 165 }, 8000);
+       
+         
+         $(window).scroll(function(){
+             scrolled = true;
          })
          
-          
+          if(scrolled=true)
+          {
+              ChnageScrollNav();
+          }
      })
 
 
-     function animateNumber()
-     {
-          $(".count").prop('Counter',0).animate({
-           Counter: $(this).text()
-            }, {
-                duration: 4000,
-                easing: 'swing',
-                step: function (now) {
-                    $(this).text(Math.ceil(now));
-                }
-    });
-     }
+     
+     
 
      var display = false;
      function ShowServices(){
@@ -111,14 +106,69 @@ $('.carousel').carousel({
                 $(".img-service").parent().children(".disable-img").css("opacity","0.7");
              }    
      }
+     function removeActiveClass()
+     {
+         $.each( $('.navbar-nav a'),function(i,item){
+            $(item).removeClass('active-nav');
+         })
+     }
+     function ChnageScrollNav()
+     {
+         var countCharg= false;
+         $(window).scroll(function() {
+                
+                 if ($(this).scrollTop()<=100) 
+                 {
+                     $(".navbar-inverse").css("backgroundColor","rgba(255, 255, 255, 0.78)");
+                 }
+                 if ($(this).scrollTop() <= $('.chiffre-cle').offset().top-100 && $(this).scrollTop()  >=100) {
+                       removeActiveClass();
+                       $(".navbar-inverse").css("backgroundColor","white");
+                       if(!countCharg)
+                       {
+                           $('#count1').animateNumber({ number: 35 }, 4000);
+                           $('#count2').animateNumber({ number: 1123 }, 4000);
+                           $('#count3').animateNumber({ number: 22 }, 4000);
+                           $('#count4').animateNumber({ number: 14 }, 4000);
+                           countCharg=true;
+                       }
+                }
+                if ($(this).scrollTop() >= $('.aboutus').offset().top-300) {
+                      removeActiveClass();
+                     $('.navbar-nav a').eq(0).addClass('active-nav');
+                }
 
+                if ($(this).scrollTop() >= $('.offre-tarifs').offset().top-300) {
+                     removeActiveClass();
+                     $('.navbar-nav a').eq(1).addClass('active-nav');
+                }
+                // if ($(this).scrollTop() >= $('section[data-anchor="news"]').offset().top) {
+                //          removeActiveClass();
+                //      $('.navbar-nav a').eq(0).addClass('active-nav');
+                // }
+                // if ($(this).scrollTop() >= $('section[data-anchor="products"]').offset().top) {
+                //          removeActiveClass();
+                //      $('.navbar-nav a').eq(0).addClass('active-nav');
+                // }
+                // if ($(this).scrollTop() >= $('section[data-anchor="contact"]').offset().top) {
+                //          removeActiveClass();
+                //      $('.navbar-nav a').eq(0).addClass('active-nav');
+                // }
 
+            });
+     }
      function ScrollToDiv()
      {
          $(".navbar-nav li a").eq(0).click(function(e){
            
              $('html,body').animate({
-                    scrollTop: $(".aboutus").offset().top},
+                    scrollTop: $(".aboutus").offset().top-100},
+                    'slow');
+         })
+         $(".navbar-nav li a").eq(1).click(function(e){
+           
+             $('html,body').animate({
+                    scrollTop: $(".offre-tarifs").offset().top-150},
                     'slow');
 
          })
