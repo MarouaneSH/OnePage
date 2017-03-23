@@ -2,6 +2,13 @@
 {
     font-family: Montserrat;
 }
+.head
+{
+   font-family: 'Raleway', sans-serif;
+    position: absolute;
+     font-size: 40px;
+     word-spacing:8px;
+}
 .carousel-caption h3 {
   display: inline-block;
   font-size: 70px
@@ -16,6 +23,24 @@
 {
     color: #B75654;
     font-weight: bold;
+}
+#head3
+{
+        right: -80px;
+    top: 350px;
+}
+#head1
+{
+       
+    top: 200px;
+    /* line-height: 40px; */
+   
+    left: -180px;
+}
+#head2
+{
+        top: 280px;
+    left: 35%;
 }
 .background-shadow
 {
@@ -49,7 +74,7 @@
 .navbar-nav
 {
         width: 70%;
-    margin: 15px 0;
+    margin: 30px 0;
 }
 .navbar-inverse {
     background-color: rgba(255, 255, 255, 0.78);
@@ -74,19 +99,36 @@
     color: black;
        border-bottom: solid #B75654;
 }
-
-
+.navbar-header
+{
+    margin: 0;
+}
+.navbar
+{
+    height: 120px;
+}
+.navbar-nav .nav{
+    margin-right: 15px;
+}
+.carousel-caption h4
+{
+    font-size: 28px;
+}
 /* CHIFRE CLE*/
-.chiffre-cle
+.chiffre-cle, .aboutus ,.offre-tarifs
 {
     width: 100%;
     height: 100vh;
     position: relative;
 }
+.chiffre-cle
+{
+    height: 700px;
+}
 .chiffre-cle .container
 {
     position: absolute;
-    top: 0;
+    top: 20%;;
     width: 90%;
     margin: 20px auto;
     left: 0;
@@ -107,6 +149,227 @@
 
    background: rgba(255, 255, 255, 0.43);
 }
+.circle
+{
+        width: 150px;
+    height: 150px;
+    position: relative;
+    text-align: center;
+    border: solid white 1px;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+.chiffre-header
+{
+       width: 100%;
+    background: white;
+    /* height: 500px; */
+    position: absolute;
+    top: 0;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.chiffre-header h3
+{
+    border-top: solid 1px #B75654;
+    
+    width: 250px;
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.circle h1
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 32%;
+    bottom: 0;
+    margin: auto;
+    color: white;
+    font-size: 50px;
+}
+.chiffre-desc 
+{
+        width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    background: #595959;
+    color: white;
+    margin-top: 10px;
+    padding: 3px;
+}
+
+.temoignage
+{
+    border: solid 1px;
+    padding: 10px;
+    bottom: top;
+    position: absolute;
+    margin-top: 15%;
+        min-height: 180px;
+
+}
+.temoignage h5
+{
+        position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+.temoignage p
+{
+        font-weight: 500;
+    font-size: 20px;
+}
+.temoignage .fa
+{
+    font-size: 50px;
+    left: -20px;
+    top: -30px;
+    position: absolute;
+}
+
+/*ABOUT US*/
+.aboutus
+{
+    background: #162127;
+        height: 660px;
+}
+.aboutus-desc
+{
+    margin-top: 10%;
+    color: white;
+}
+.aboutus-desc p
+{
+    line-height: 28px;
+    font-size: 16px
+}
+.aboutus-desc h4
+{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.aboutus-desc span
+{
+    color: #B75654;
+}
+
+/*OFFRES TARIFS*/
+.offre-tarifs
+{
+    background: #C7CACB;
+        margin-top: -20px;
+        height: 900px
+}
+.offre-tarifs h3
+{
+        text-align: center;
+}
+hr
+{
+        width: 250px;
+        border-color: #B75654;
+}
+.offre-tarifs .container
+{
+    top: 30%;
+}
+.tarifs-title
+{
+    margin-top: 10%;
+    margin-bottom: 60px;
+}
+.disable-img
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(255, 252, 252, 0.98);
+    opacity: 0;
+   
+}
+.img-service
+{
+    height: 150px;
+}
+.img-service img
+{
+    margin: 0 auto;
+}
+.offre-example img
+{
+    width: 50px;
+}
+.offre-example .col-md-15
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.offre-example p
+{
+    font-size: 12px;
+}
+.offre-example p
+{
+    margin-top: 8px;
+}
+.offre-example
+{
+    margin-top: 50px;
+}
+.offre-example .development
+{
+    display: none;
+}
+.espace
+{
+    text-align: center;
+}
+.offre-example  .espace .col-md-3
+{
+    text-align: center;
+}
+
+
+/*Create five layout*/
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
 
 
 @media screen and (max-width: 790px) {
@@ -121,5 +384,10 @@
     .carousel-caption p
     {
         font-size: 12px;
+    }
+    .navbar-brand img
+    {
+            height: 80px !important;
+    width: 280px !important;
     }
 }
