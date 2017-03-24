@@ -68,7 +68,7 @@
 .gldp-default .dow {
 	color: black;
 	font-weight: bold;
-	cursor: wait !important;
+	cursor: pointer !important;
 	background: #DCDCDC;
 	background: -moz-linear-gradient(top,  #DCDCDC 0%, #ffcccc 1%, #DCDCDC 2%, #DCDCDC 98%, #DCDCDC 99%, #DCDCDC 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#DCDCDC), color-stop(1%,#DCDCDC), color-stop(2%,#DCDCDC), color-stop(98%,#DCDCDC), color-stop(99%,#ffcccc), color-stop(100%,#DCDCDC));

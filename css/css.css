@@ -2,6 +2,10 @@
 {
     font-family: Montserrat;
 }
+body
+{
+    overflow-x: hidden;
+}
 .head
 {
    font-family: 'Raleway', sans-serif;
@@ -11,7 +15,9 @@
 }
 .carousel-caption h3 {
   display: inline-block;
-  font-size: 70px
+  font-size: 70px;
+  font-family: 'Lobster Two';
+  font-weight: bold;
 }
 .carousel-caption p
 {
@@ -54,7 +60,7 @@
 }
 .background-shadow
 {
-    background: rgba(0, 0, 0, 0.19);;
+    background: rgba(0, 0, 0, 0.42);;
     position: absolute;
     top: 0;
     width: 100%;
@@ -91,7 +97,7 @@
     background-color: rgba(255, 255, 255, 0.78);
     border-color: #080808;
     position: fixed;
-    z-index: 20;
+        z-index: 10000;
     width: 100%;
     border: none;
     border-radius: 0;
@@ -162,7 +168,7 @@
     position: absolute;
     top: 0;
     
-   background: rgba(139, 157, 158, 0.22);
+   background: rgba(197, 191, 191, 0.38)
 }
 .circle
 {
@@ -251,14 +257,17 @@
 /*ABOUT US*/
 .aboutus
 {
-    /*background: url('../img/background.png') no-repeat ; 
+    background: url('../img/background.png') no-repeat ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: top;*/
-  background: #C7CACB;
- height: 560px;
+  background-position: top;
+  /*background: #C7CACB;*/
+    min-height: 560px;
+    height: 100vh;
+    padding-top: 5%;
+
 }
 .aboutus-desc
 {
@@ -287,7 +296,8 @@
 {
     background: #C7CACB;
         margin-top: -20px;
-        height: 600px
+       min-height: 600px;
+    height: 100vh;
 }
 .offre-tarifs h3
 {
@@ -421,6 +431,9 @@ hr
     background: #d39491;
         padding-top: 50px;
     padding-bottom: 150px;
+        min-height: 500px;
+    height: 100vh;
+    padding-top: 10%
 }
 .partners h2
 {
@@ -447,6 +460,12 @@ hr
     padding-bottom: 80px;
    
 }
+.actualites 
+{
+        min-height: 700px;
+    height: 100vh;
+    padding-top: 5%;
+}
 .events h3
 {
     margin-bottom: 60px;
@@ -466,7 +485,7 @@ hr
 .events .row img
 {
        width: 40px;
-    margin-right: 20px;
+   
 }
 .events .row 
 {
@@ -490,11 +509,13 @@ hr
     left: 0;
     margin: 0;
     margin: auto;
-    width: 60px;
+    width: 60px !important;
 
 }
 .contact
 {
+        height: 100vh;
+    min-height: 600px;
     padding: 80px;
     background: url('../img/slider1.png');
     background-size: cover;
@@ -514,9 +535,24 @@ height: 300px !important;
 }*/
 
 
-
-
-
+.contact{
+    position: relative;
+}
+.contact-form
+{
+    color: white;
+    padding-left: 60px;
+}
+.contact-shadow
+{
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    background: rgba(56, 56, 56, 0.48);
+    height: 100%;
+    top: 0;
+    left: 0;
+}
 
 
 
@@ -596,20 +632,14 @@ height: 300px !important;
         }
         .chiffre-cle
         {
-            height: 1650px;
+            height: 1250px;
         }
         .chiffre-cle .container
         {
             top: 120px;
+            padding: 0;
         }
-        .circle
-        {
-                border: solid #585858 1px;
-        }
-        .circle h1
-        {
-            color: #585858;
-        }
+        
         .chiffre-desc   
         {
             margin-bottom: 30px;
@@ -619,5 +649,66 @@ height: 300px !important;
             position: initial;
             margin-right: 0 !important;
         }
-
+        .aboutus
+        {
+                height: auto;
+                padding-bottom: 40px;
+        }
+        .offre-tarifs
+        {
+            height: auto;
+            
+        }
+        .espace .col-md-3
+        {
+            margin-left: 0 !important;
+        }
+        .bug-mobile{
+                margin-top: 90px;
+        }
+        .partners 
+        {
+            height: auto;
+        }
+        .partners img
+        {
+            margin: 0 auto;
+        }
+        .partners img
+        {
+            margin-bottom: 20px !important;
+        }
+        .aboutus .col-md-6
+        {
+            padding: 0 !important;
+        }
+        .actualites
+        {
+            height: auto;
+        }
+        .actualites .fix-mobile
+        {
+            margin-top: 60px;
+        }
+        .actualites .col-xs-12
+        {
+            text-align: center;
+        }
+        .single-event div
+        {
+            text-align: center !important
+        }
+        .contact
+        {
+                height: auto;
+                padding: 0;
+        }
+        .contact-form
+        {
+            padding: 0;
+        }
+        .contact-form .col-md-7 ,.contact-form .col-md-5
+        {
+            padding: 0;
+        }
 }
